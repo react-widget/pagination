@@ -1,0 +1,84 @@
+.rw-pagination {
+	display: flex;
+	align-items: center;
+}
+
+.rw-pagination > div:not(:last-child) {
+	margin-right: 6px;
+}
+
+.rw-pagination-item {
+	padding: 5px 10px;
+	user-select: none;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	outline: 0;
+	border-radius: 2px;
+	cursor: pointer;
+	line-height: 20px;
+}
+
+.rw-pagination-item-next-more,
+.rw-pagination-item-prev-more {
+	font-size: 12px;
+}
+
+.rw-pagination-icon-left,
+.rw-pagination-icon-right {
+	display: none;
+}
+
+.rw-pagination-item:focus,
+.rw-pagination-item:hover {
+	border-color: #40a9ff;
+}
+
+.rw-pagination-item:active {
+	background-color: #eaeaea;
+	border-color: #dcdee0;
+}
+
+.rw-pagination-item-disabled,
+.rw-pagination-item-disabled:active {
+	color: rgba(0, 0, 0, 0.25);
+	border-color: #d9d9d9;
+	background-color: #fff;
+	cursor: not-allowed;
+}
+
+.rw-pagination-item-disabled:hover {
+	border-color: #d9d9d9;
+}
+
+.rw-pagination-item-active,
+.rw-pagination-item-active:active {
+	background: #40a9ff;
+	color: #fff;
+	border-color: #40a9ff;
+	cursor: default;
+}
+
+.rw-pagination-quick-jumper input {
+	width: 45px;
+	margin: 0 6px;
+	padding: 5px 10px;
+	border-radius: 2px;
+	border: 1px solid #d9d9d9;
+}
+
+.rw-pagination-size-changer select {
+	padding: 5px 10px;
+	border-radius: 2px;
+	border: 1px solid #d9d9d9;
+}
+
+.rw-pagination-disabled .rw-pagination-item {
+	background: #f5f5f5;
+	border-color: #d9d9d9;
+	cursor: not-allowed;
+}
+
+.rw-pagination-disabled .rw-pagination-item-active {
+	background: #dbdbdb;
+	border-color: transparent;
+}
